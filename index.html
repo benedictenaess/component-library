@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/font.css">
 	<link rel="stylesheet" href="css/components/accordion.css">
 	<link rel="stylesheet" href="css/components/button.css">
+	<link rel="stylesheet" href="css/components/loader.css">
 </head>
 <body>
 	<div class="grid">
@@ -68,6 +69,11 @@
 				<li>
 					<button data-component-display="alert" class="overview__button">
 						Alert
+					</button>
+				</li>
+				<li>
+					<button data-component-display="loader" class="overview__button">
+						Loader
 					</button>
 				</li>
 				<li>
@@ -167,6 +173,26 @@
 							Button
 						</button>
 					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="component" data-component-name="loader">
+			<div class="component-state">
+				<div class="component-state__name">
+					Paused
+				</div>
+				<div class="component-state__variant">
+						<img class="loader" src="assets/Ellipse 3.png" alt="loader">
+				</div>
+			</div>
+
+			<div class="component-state">
+				<div class="component-state__name">
+					Loading
+				</div>
+				<div class="component-state__variant">
+						<img class="loader loader--active" src="assets/Ellipse 3.png" alt="loader">
 				</div>
 			</div>
 		</div>
