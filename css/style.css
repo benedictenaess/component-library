@@ -15,7 +15,7 @@ body {
 	grid-template-columns: repeat(12, 1fr);
 }
 
-.front-page {
+/* .front-page {
 	grid-column-start: 5;
 	grid-column-end: 12;
 	display: flex;
@@ -27,7 +27,7 @@ body {
 	font-size: 5rem;
 	font-weight: 500;
 	line-height: 1.6;
-}
+} */
 
 .overview {
 	grid-column-start: 1;
@@ -52,6 +52,10 @@ body {
 	transform: translateX(10px);
 }
 
+.return__button {
+line-height: 4rem;
+}
+
 .component {
 	display: none;
 	flex-flow: column nowrap;
@@ -74,4 +78,8 @@ body {
 
 .component-state__name {
 	color: var(--color-accent-2);
+}
+
+ul {
+	transition: trans;
 }
