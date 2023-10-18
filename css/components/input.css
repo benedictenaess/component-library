@@ -1,0 +1,29 @@
+.input {
+	display: flex;
+	flex-flow: column wrap;
+	gap: var(--spacing-medium);
+}
+
+.input-input {
+	border: 2px solid var(--color-accent-2);
+	border-radius: var(--border-radius);
+	width: 12rem;
+	padding: var(--spacing-small);
+}
+
+.input-input:focus {
+	border: 2px solid var(--color-accent-1);
+}
+
+.input-input::placeholder {
+	font-size: var(--font-size-small);
+	color: var(--color-accent-2);
+}
+
+input[type="text"]{
+	font-size: var(--font-size-small);
+}
+
+.input--active .input-input {
+	border: 2px solid var(--color-accent-1);
+}
