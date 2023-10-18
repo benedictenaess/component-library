@@ -1,5 +1,6 @@
 :root {
 	--font-size-base: 30px;
+	--font-size-small: 20px;
 /* TODO: husk å bytte font strl til 20px */
 
 	--color-primary: black;
