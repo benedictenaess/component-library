@@ -69,6 +69,10 @@ line-height: 4rem;
 	color: var(--color-primary);
 }
 
+.component-state__variant {
+	font-size: var(--font-size-small);
+}
+
 ul {
 	transition: trans;
 }
