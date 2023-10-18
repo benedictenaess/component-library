@@ -1,0 +1,26 @@
+.checkbox {
+	display: flex;
+	flex-flow: column wrap;
+	gap: var(--spacing-small);
+}
+
+.checkbox__label {
+	cursor: pointer;
+}
+
+.checkbox__text::before {
+	content: '';
+	display: inline-block;
+	background: var(--color-accent-2);
+	margin-right: 0.3rem;
+	width: 20px;
+	height: 20px;
+}
+
+.checkbox__label:hover .checkbox__text::before {
+	background: var(--color-accent-1);
+}
+
+.checkbox__input:checked + .checkbox__text::before {
+	background: var(--color-accent-1);
+}
