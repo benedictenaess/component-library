@@ -1,0 +1,23 @@
+.radio__label {
+	display: flex;
+	flex-wrap: wrap;
+	cursor: pointer;
+}
+
+.radio__text::before {
+	content: '';
+	display: inline-block;
+	background: var(--color-accent-2);
+	margin-right: 0.3rem;
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+}
+
+.radio__label:hover .radio__text::before {
+	background: var(--color-accent-1);
+}
+
+.radio__input:checked + .radio__text::before {
+	background: var(--color-accent-1);
+}
