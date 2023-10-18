@@ -1,0 +1,44 @@
+.accordion {
+	border: 1px solid var(--color-accent-2);
+	border-radius: var(--border-radius);
+	min-width: 15em;
+}
+
+.accordion__toggle {
+	width: 100%;
+	text-align: left;
+	padding: var(--spacing-small);
+}
+
+.accordion__toggle::before {
+	content: '';
+	display: inline-block;
+	align-items: center;
+	background: url(../../assets/Vector.svg) no-repeat bottom;
+	background-size: contain;
+	width: 1rem;
+	height: 1rem;
+}
+
+.accordion__content {
+	display: none;
+	padding: var(--spacing-small);
+}
+
+.accordion--hover .accordion__toggle,
+.accordion__toggle:hover,
+.accordion__toggle--hover {
+	border: 3px solid var(--color-accent-2);
+}
+
+.accordion--expanded .accordion__content {
+	display: block;
+}
+
+.accordion--expanded .accordion__toggle {
+	border-bottom: 2px solid var(--color-accent-2);
+}
+
+.accordion--expanded .accordion__toggle::before {
+	transform: rotate(180deg);
+}
