@@ -1,17 +1,18 @@
 :root {
 	--font-size-base: 30px;
+/* TODO: husk å bytte font strl til 20px */
 
 	--color-primary: black;
 	--color-secondary: hsl(0, 0%, 65%);
 	--color-tertiary: hsl(0, 0%, 90%);
 
-	--color-accent-1: #a9d5a2;
+	--color-accent-1: #E25E3E;
 	--color-accent-2: #efb680;
-	--color-accent-3: #d97575;
+	--color-accent-3: blue;
 
-	--border-radius: 10px;
+	--border-radius: 5px;
 
-	--spacing-small: 0.5rem;
+	--spacing-small: 0.3rem;
 	--spacing-medium: 1rem;
 	--spacing-large: 2rem;
 }
