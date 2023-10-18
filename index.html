@@ -14,6 +14,8 @@
 	<link rel="stylesheet" href="css/components/radio.css">
 	<link rel="stylesheet" href="css/components/checkbox.css">
 	<link rel="stylesheet" href="css/components/search.css">
+	<link rel="stylesheet" href="css/components/input.css">
+	<link rel="stylesheet" href="css/components/alert.css">
 </head>
 <body>
 	<div class="grid">
@@ -45,7 +47,7 @@
 					</button>
 				</li>
 				<li>
-					<button data-component-display="Input" class="overview__button">
+					<button data-component-display="input" class="overview__button">
 						Input
 					</button>
 				</li>
@@ -272,6 +274,32 @@
 			</div>
 		</div>
 
+		<div class="component" data-component-name="input">
+			<div class="component-state">
+				<div class="component-state__name">
+					Normal
+				</div>
+				<div class="component-state__variant">
+					<div class="input">
+						<input class="input-input" type="text" placeholder="fill in favorite color" maxlength="40">
+						<input class="input-input" type="text" placeholder="fill in favorit animal" maxlength="40">
+					</div>
+				</div>
+			</div>
+			
+			<div class="component-state">
+				<div class="component-state__name">
+					Active
+				</div>
+				<div class="component-state__variant">
+					<div class="input input--active">
+						<input class="input-input" type="text" placeholder="fill in favorite color" maxlength="40">
+						<input class="input-input" type="text" placeholder="fill in favorit animal" maxlength="40">
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="component" data-component-name="search">
 			<div class="component-state">
 				<div class="component-state__name">
@@ -299,6 +327,35 @@
 						</label>
 					</div>
 				</div>
+			</div>
+		</div>
+
+		<div class="component" data-component-name="alert">
+			<div class="component-state">
+				<div class="component-state__name">
+					First alert
+				</div>
+				<div class="component-state__variant">
+					<div class="alert alert-first">
+						This is a warning
+					</div>
+				</div>
+			</div>
+			
+			<div class="component-state">
+				<div class="component-state__name">
+					Second alert
+				</div>
+				<div class="component-state__variant">
+					<div class="alert alert-second">
+						Stop it!
+					</div>
+				</div>
+			</div>
+
+			<div class="alert-test">
+				<button class="alert-test__button">First alert test</button>
+				<button class="alert-test__button">Second alert test</button>
 			</div>
 		</div>
 
