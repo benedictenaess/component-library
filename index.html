@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="css/components/accordion.css">
 	<link rel="stylesheet" href="css/components/button.css">
 	<link rel="stylesheet" href="css/components/loader.css">
+	<link rel="stylesheet" href="css/components/radio.css">
 </head>
 <body>
 	<div class="grid">
@@ -85,6 +86,47 @@
 				</li>
 			</ul>
 		</aside>
+		
+				<div class="component" data-component-name="button">
+					<div class="component-state">
+						<div class="component-state__name">
+							Normal
+						</div>
+						<div class="component-state__variant">
+							<div class="button">
+								<button class="button__toggle">
+									Button
+								</button>
+							</div>
+						</div>
+					</div>
+		
+					<div class="component-state">
+						<div class="component-state__name">
+							Hover
+						</div>
+						<div class="component-state__variant">
+							<div class="button button--hover">
+								<button class="button__toggle">
+									Button
+								</button>
+							</div>
+						</div>
+					</div>
+		
+					<div class="component-state">
+						<div class="component-state__name">
+							Active
+						</div>
+						<div class="component-state__variant">
+							<div class="button button--active">
+								<button class="button__toggle">
+									Button
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
 
 		<div class="component" data-component-name="accordion">
 			<div class="component-state">
@@ -136,42 +178,47 @@
 			</div>
 		</div>
 
-		<div class="component" data-component-name="button">
+		<div class="component" data-component-name="radio">
 			<div class="component-state">
 				<div class="component-state__name">
 					Normal
 				</div>
 				<div class="component-state__variant">
-					<div class="button">
-						<button class="button__toggle">
-							Button
-						</button>
+					<div class="radio">
+						<label class="radio__label">
+							<input class="radio__input" type="radio" hidden name="yes-maybe-no" value="yes">
+							<span class="radio__text">Yes</span>
+						</label>
+						<label class="radio__label">
+							<input class="radio__input" type="radio" hidden name="yes-maybe-no" value="maybe">
+							<span class="radio__text">Maybe</span>
+						</label>
+						<label class="radio__label">
+							<input class="radio__input" type="radio" hidden name="yes-maybe-no" value="no">
+							<span class="radio__text">No</span>
+						</label>
 					</div>
 				</div>
 			</div>
 
 			<div class="component-state">
 				<div class="component-state__name">
-					Hover
+					Checked
 				</div>
 				<div class="component-state__variant">
-					<div class="button button--hover">
-						<button class="button__toggle">
-							Button
-						</button>
-					</div>
-				</div>
-			</div>
-
-			<div class="component-state">
-				<div class="component-state__name">
-					Active
-				</div>
-				<div class="component-state__variant">
-					<div class="button button--active">
-						<button class="button__toggle">
-							Button
-						</button>
+					<div class="radio">
+						<label class="radio__label">
+							<input class="radio__input" type="radio" checked hidden name="yes-maybe-no-2" value="yes">
+							<span class="radio__text">Yes</span>
+						</label>
+						<label class="radio__label">
+							<input class="radio__input" type="radio" hidden name="yes-maybe-no-2" value="maybe">
+							<span class="radio__text">Maybe</span>
+						</label>
+						<label class="radio__label">
+							<input class="radio__input" type="radio" hidden name="yes-maybe-no-2" value="no">
+							<span class="radio__text">No</span>
+						</label>
 					</div>
 				</div>
 			</div>
