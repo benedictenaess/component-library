@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="css/components/loader.css">
 	<link rel="stylesheet" href="css/components/radio.css">
 	<link rel="stylesheet" href="css/components/checkbox.css">
+	<link rel="stylesheet" href="css/components/search.css">
 </head>
 <body>
 	<div class="grid">
@@ -44,8 +45,8 @@
 					</button>
 				</li>
 				<li>
-					<button data-component-display="search" class="overview__button">
-						Search
+					<button data-component-display="Input" class="overview__button">
+						Input
 					</button>
 				</li>
 				<li>
@@ -59,8 +60,8 @@
 					</button>
 				</li>
 				<li>
-					<button data-component-display="inputfield" class="overview__button">
-						Input field
+					<button data-component-display="search" class="overview__button">
+						Search
 					</button>
 				</li>
 				<li>
@@ -265,6 +266,36 @@
 						<label class="radio__label">
 							<input class="radio__input" type="radio" hidden name="yes-maybe-no-2" value="no">
 							<span class="radio__text">No</span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="component" data-component-name="search">
+			<div class="component-state">
+				<div class="component-state__name">
+					Normal
+				</div>
+				<div class="component-state__variant">
+					<div class="search">
+						<label class="search__label">
+							<input class="search__input" type="search" placeholder="Search" name="search">
+							<button class="search__button">Search</button>
+						</label>
+					</div>
+				</div>
+			</div>
+			
+			<div class="component-state">
+				<div class="component-state__name">
+					Search
+				</div>
+				<div class="component-state__variant">
+					<div class="search search--active">
+						<label class="search__label">
+							<input class="search__input" type="search" placeholder="Search" name="search">
+							<button class="search__button">Search</button>
 						</label>
 					</div>
 				</div>
