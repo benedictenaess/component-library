@@ -10,7 +10,7 @@ body {
 	gap: var(--spacing-large);
 }
 
-.main {
+.grid {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 }
@@ -25,6 +25,7 @@ body {
 
 .front-page__headline {
 	font-size: 5rem;
+	font-weight: 500;
 	line-height: 1.6;
 }
 
@@ -36,6 +37,32 @@ body {
 	flex-flow: row wrap;
 }
 
-.overview-buttons {
+.overview__buttons {
 	align-self: flex-end;
+	line-height: 1.4;
+}
+
+.overview__button {
+	color: var(--color-secondary);
+}
+
+.overview__button:hover {
+	color: var(--color-accent-2);
+}
+
+/* .component {
+	grid-column-start: 4;
+	grid-column-end: 8;
+	grid-row: 1;
+} */
+
+.component-state {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 100%;
+	gap: var(--spacing-small);
+}
+
+.component-state__name {
+	color: var(--color-accent-2);
 }
