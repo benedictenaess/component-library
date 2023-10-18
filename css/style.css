@@ -22,8 +22,8 @@ body {
 	grid-row: 1;
 	display: flex;
 	flex-flow: row wrap;
-	/* se om padding holder seg */
-	padding-top: 50px; 
+	/* TODO: add padding? */
+	/* padding-top: 50px;  */
 }
 
 .overview__buttons {
