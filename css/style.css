@@ -18,7 +18,7 @@ body {
 
 .overview {
 	grid-column-start: 1;
-	grid-column-end: 3;
+	grid-column-end: 4;
 	grid-row: 1;
 	display: flex;
 	flex-flow: row wrap;
@@ -49,8 +49,8 @@ line-height: 4rem;
 	display: none;
 	flex-flow: column nowrap;
 	gap: var(--spacing-large);
-	grid-column-start: 4;
-	grid-column-end: 8;
+	grid-column-start: 5;
+	grid-column-end: 12;
 	grid-row: 1;
 }
 
@@ -62,15 +62,11 @@ line-height: 4rem;
 	display: flex;
 	flex-flow: column nowrap;
 	width: 100%;
-	gap: var(--spacing-small);
+	gap: var(--spacing-medium);
 }
 
 .component-state__name {
-	color: var(--color-accent-2);
-}
-
-.component-state__variable {
-
+	color: var(--color-primary);
 }
 
 ul {
