@@ -3,9 +3,10 @@ html {
 }
 
 body {
+	width: 100%;
 	font-family: 'Inter', Helvetica, sans-serif;
-	display: flex;
-	flex-flow: row wrap;
+	/* display: flex;
+	flex-flow: row wrap; */
 	padding: var(--spacing-large);
 	gap: var(--spacing-large);
 }
@@ -15,26 +16,14 @@ body {
 	grid-template-columns: repeat(12, 1fr);
 }
 
-/* .front-page {
-	grid-column-start: 5;
-	grid-column-end: 12;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-end;
-}
-
-.front-page__headline {
-	font-size: 5rem;
-	font-weight: 500;
-	line-height: 1.6;
-} */
-
 .overview {
 	grid-column-start: 1;
 	grid-column-end: 3;
 	grid-row: 1;
 	display: flex;
 	flex-flow: row wrap;
+	/* se om padding holder seg */
+	padding-top: 50px; 
 }
 
 .overview__buttons {
@@ -78,6 +67,10 @@ line-height: 4rem;
 
 .component-state__name {
 	color: var(--color-accent-2);
+}
+
+.component-state__variable {
+
 }
 
 ul {
