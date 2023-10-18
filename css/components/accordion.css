@@ -1,7 +1,7 @@
 .accordion {
 	border: 1px solid var(--color-accent-2);
 	border-radius: var(--border-radius);
-	min-width: 15em;
+	width: 25em;
 }
 
 .accordion__toggle {
@@ -16,8 +16,8 @@
 	align-items: center;
 	background: url(../../assets/Vector.svg) no-repeat bottom;
 	background-size: contain;
-	width: 1rem;
-	height: 1rem;
+	width: 0.8rem;
+	height: 0.8rem;
 }
 
 .accordion__content {
