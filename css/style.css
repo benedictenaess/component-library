@@ -1,0 +1,41 @@
+html {
+	font-size: var(--font-size-base);
+}
+
+body {
+	font-family: 'Inter', Helvetica, sans-serif;
+	display: flex;
+	flex-flow: row wrap;
+	padding: var(--spacing-large);
+	gap: var(--spacing-large);
+}
+
+.main {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+
+.front-page {
+	grid-column-start: 5;
+	grid-column-end: 12;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+}
+
+.front-page__headline {
+	font-size: 5rem;
+	line-height: 1.6;
+}
+
+.overview {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row: 1;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.overview-buttons {
+	align-self: flex-end;
+}
