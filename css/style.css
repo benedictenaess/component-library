@@ -10,6 +10,9 @@ body {
 	padding: var(--spacing-large);
 	gap: var(--spacing-large);
 }
+aside {
+	position: absolute;
+}
 
 .grid {
 	display: grid;
