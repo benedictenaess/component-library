@@ -31,3 +31,16 @@ input[type="text"]{
 .input--active .input-input::placeholder {
 	color: var(--color-accent-1);
 }
+
+.input-button {
+	background-color: var(--color-tertiary);
+	color: var(--color-secondary);
+	border-radius: var(--border-radius);
+	padding: var(--spacing-small);
+	margin-top: var(--spacing-medium);
+}
+
+.input-button:hover {
+	color: var(--color-accent-3);
+	background: var(--color-accent-2);
+}
