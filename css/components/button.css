@@ -8,10 +8,11 @@
 .button--hover .button__toggle,
 .button__toggle:hover {
 	background-color: var(--color-accent-2);
+	border: 2px solid var(--color-accent-2);
 }
 
 .button--active .button__toggle,
 .button__toggle:active {
-	color: var(--color-accent-2);
+	color: var(--color-accent-3);
 	background-color: var(--color-accent-1);
 }
