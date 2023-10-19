@@ -11,13 +11,13 @@
 	padding: var(--spacing-small);
 }
 
-.input-input:focus {
-	border: 2px solid var(--color-accent-1);
-}
-
 .input-input::placeholder {
 	font-size: var(--font-size-small);
 	color: var(--color-accent-2);
+}
+
+.input-input:focus {
+	border: 2px solid var(--color-accent-1);
 }
 
 input[type="text"]{
@@ -26,4 +26,8 @@ input[type="text"]{
 
 .input--active .input-input {
 	border: 2px solid var(--color-accent-1);
+}
+
+.input--active .input-input::placeholder {
+	color: var(--color-accent-1);
 }
