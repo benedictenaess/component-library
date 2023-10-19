@@ -44,5 +44,14 @@ optionsList.forEach(option => {
 		selected.innerText = option.querySelector('label').innerText; 
 		optionsContainer.classList.remove('active');
 	})
-
 })
+
+//button. TODO: remove
+
+const buttonButton = document.querySelectorAll('.button__toggle');
+
+buttonButton.forEach(singleButton => {
+	singleButton.addEventListener('click', function() {
+		singleButton.innerText = 'Stop it';
+	});
+});
