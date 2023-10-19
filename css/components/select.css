@@ -1,0 +1,84 @@
+
+
+.select-box {
+	display: flex;
+	flex-direction: column;
+	width: 450px;
+	
+}
+
+.select-box .options-container {
+	background: var(--color-accent-2);
+	max-height: 0;
+	width: 100%;
+	opacity: 0;
+	transition: all 0.4s;
+	border-radius: var(--border-radius);
+	overflow: hidden;
+	order: 1;
+}
+
+.select-box .options-container.active {
+	max-height: 240px;
+	opacity: 1;
+	overflow-y: scroll;
+}
+
+.select-box .options-container::-webkit-scrollbar {
+	width: 8px;
+	background: var(--color-accent-2);
+}
+
+.select-box .options-container::-webkit-scrollbar-thumb {
+	background: var(--color-accent-1);
+}
+
+.select-box .option,
+.selected {
+	padding: 12px 24px;
+	cursor: pointer;
+}
+
+.select-box .option:hover {
+	background: var(--color-accent-1)
+}
+.select-box label {
+	cursor: pointer;
+}
+
+.select-box .option .radio {
+	display: none;
+}
+
+.selected {
+	display: flex;
+	background-color: var(--color-accent-2);
+	border-radius: var(--border-radius);
+	margin-bottom: var(--spacing-small);
+	position: relative;
+	order: 0;
+}
+
+.selected::after {
+	content: '';
+	background: url(../../assets/Vector.svg) no-repeat center;
+	background-size: contain;
+	display: inline-block;
+	position: absolute;
+	width: 0.8rem;
+	height: 0.8rem;
+	margin-left: 12.8rem;
+
+	rotate: 180deg;
+
+	transition: all 0.4s;
+}
+
+.select-box .options-container.active + .selected::after {
+	transform: rotateX(180deg);
+}
+
+.option, .selected {
+	color: var(--color-accent-3);
+}
+
