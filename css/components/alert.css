@@ -17,6 +17,7 @@
 .alert-test__button {
 	color: var(--color-secondary);
 	font-size: var(--font-size-small);
+	width: 6.85rem;
 	border: 2px solid var(--color-secondary);
 	border-radius: var(--border-radius);
 	padding: var(--spacing-small);
