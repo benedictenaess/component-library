@@ -55,3 +55,14 @@ buttonButton.forEach(singleButton => {
 		singleButton.innerText = 'Stop it';
 	});
 });
+
+
+//input button
+
+const inputButtons = document.querySelectorAll('.input-button')
+
+inputButtons.forEach(inputButton => {
+	inputButton.addEventListener('click', () => {
+		alert("That's cool")
+	})
+})
