@@ -17,14 +17,13 @@
 	<link rel="stylesheet" href="css/components/input.css">
 	<link rel="stylesheet" href="css/components/alert.css">
 	<link rel="stylesheet" href="css/components/select.css">
+	<link rel="stylesheet" href="css/components/choicechip.css">
 </head>
 <body>
+	<header>
+		<h1 class="component-library__title">Component Library</h1>
+	</header>
 	<div class="grid">
-		<!-- <div class="front-page">
-			<span class="front-page__headline">Component</span>
-			<span class="front-page__headline">Library</span>
-		</div> -->
-
 		<aside class="overview">
 			<ul class="overview__buttons">
 				<li>
@@ -50,11 +49,6 @@
 				<li>
 					<button data-component-display="input" class="overview__button">
 						Input
-					</button>
-				</li>
-				<li>
-					<button data-component-display="switch" class="overview__button">
-						Switch
 					</button>
 				</li>
 				<li>
@@ -159,7 +153,7 @@
 						<button class="accordion__toggle">
 							Accordion
 						</button>
-						<div class="accordion__content">
+						<div class="accordion__content accordion__active">
 							write your text here
 						</div>
 					</div>
@@ -171,7 +165,7 @@
 					Active
 				</div>
 				<div class="component-state__variant">
-					<div class="accordion accordion--active">
+					<div class="accordion accordion--expanded">
 						<button class="accordion__toggle">
 							Accordion
 						</button>
@@ -285,6 +279,7 @@
 						<input class="input-input" type="text" placeholder="fill in favorite color" maxlength="40">
 						<input class="input-input" type="text" placeholder="fill in favorit animal" maxlength="40">
 					</div>
+					<button class="input-button">Submit</button>
 				</div>
 			</div>
 			
@@ -297,6 +292,7 @@
 						<input class="input-input" type="text" placeholder="fill in favorite color" maxlength="40">
 						<input class="input-input" type="text" placeholder="fill in favorit animal" maxlength="40">
 					</div>
+					<button class="input-button">Submit</button>
 				</div>
 			</div>
 		</div>
@@ -348,6 +344,11 @@
 								<div class="option">
 									<input class="radio option-radio" type="radio" id="hippopotamus" name="category">
 									<label for="hippopotamus">Hippopotamus</label>
+								</div>
+
+								<div class="option">
+									<input class="radio option-radio" type="radio" id="unicorn" name="category">
+									<label for="unicorn">Unicorn</label>
 								</div>
 
 							</div>
@@ -407,6 +408,10 @@
 									<label for="hippopotamus">Hippopotamus</label>
 								</div>
 
+								<div class="option">
+									<input class="radio option-radio" type="radio" id="unicorn" name="category-2">
+									<label for="unicorn">Unicorn</label>
+								</div>
 							</div>
 							<div class="selected">
 								Select your spirit animal
@@ -444,6 +449,47 @@
 							<input class="search__input" type="search" placeholder="Search" name="search">
 							<button class="search__button">Search</button>
 						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="component" data-component-name="choicechip">
+			<div class="component-state">
+				<div class="component-state__name">
+					Normal
+				</div>
+				<div class="component-state__variant">
+					<div class="choicechip">
+						<button class="choicechip__button choicechip__button1">Blue</button>
+						<button class="choicechip__button choicechip__button2">Orange</button>
+						<button class="choicechip__button choicechip__button3">Red</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="component-state">
+				<div class="component-state__name">
+					Hover
+				</div>
+				<div class="component-state__variant">
+					<div class="choicechip choicechip--hover">
+						<button class="choicechip__button choicechip__button1">Blue</button>
+						<button class="choicechip__button choicechip__button2">Orange</button>
+						<button class="choicechip__button choicechip__button3">Red</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="component-state">
+				<div class="component-state__name">
+					Active
+				</div>
+				<div class="component-state__variant">
+					<div class="choicechip choicechip--active">
+						<button class="choicechip__button choicechip__button1">Blue</button>
+						<button class="choicechip__button choicechip__button2">Orange</button>
+						<button class="choicechip__button choicechip__button3">Red</button>
 					</div>
 				</div>
 			</div>
