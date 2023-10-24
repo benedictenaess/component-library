@@ -52,12 +52,12 @@ const buttonButton = document.querySelectorAll('.button__toggle');
 
 buttonButton.forEach(singleButton => {
 	singleButton.addEventListener('click', function() {
-		singleButton.innerText = 'Stop it';
+		singleButton.innerText = 'Hello';
 	});
 });
 
 
-//input button
+//input button TODO: remove
 
 const inputButtons = document.querySelectorAll('.input-button')
 
@@ -65,4 +65,19 @@ inputButtons.forEach(inputButton => {
 	inputButton.addEventListener('click', () => {
 		alert("That's cool")
 	})
+})
+
+
+//accordion
+
+const accordions = document.querySelectorAll('.accordion');
+
+accordions.forEach(accordion => {
+	const accordionToggle = accordion.querySelector('.accordion__toggle');
+	
+	const displayAccordionContent = (event) => {
+		accordion.classList.toggle('accordion--expanded');
+	}
+	
+	accordionToggle.addEventListener('click', displayAccordionContent);
 })
