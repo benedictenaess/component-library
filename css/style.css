@@ -10,6 +10,20 @@ body {
 	padding: var(--spacing-large);
 	gap: var(--spacing-large);
 }
+
+header {
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: var(--spacing-medium);
+	color: var(--color-accent-4);
+}
+
+.component-library__title {
+	font-size: 2rem;
+	font-weight: 400;
+}
+
 aside {
 	position: absolute;
 }
