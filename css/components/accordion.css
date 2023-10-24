@@ -1,5 +1,5 @@
 .accordion {
-	border: 2px solid var(--color-accent-2);
+	background: var(--color-accent-2);
 	border-radius: var(--border-radius);
 	width: 25em;
 }
@@ -10,14 +10,16 @@
 	padding: var(--spacing-small);
 }
 
-.accordion__toggle::before {
+.accordion__toggle::after {
 	content: '';
 	display: inline-block;
 	align-items: center;
-	background: url(../../assets/Vector.svg) no-repeat bottom;
+	position: absolute;
+	background: url(../../assets/Vector.svg) no-repeat center;
 	background-size: contain;
 	width: 0.8rem;
 	height: 0.8rem;
+	margin-left: 11.4rem;
 }
 
 .accordion__content {
@@ -28,7 +30,10 @@
 .accordion--hover .accordion__toggle,
 .accordion__toggle:hover,
 .accordion__toggle--hover {
-	border: 2px solid var(--color-accent-1);
+	background: var(--color-accent-4);
+	border-radius: var(--border-radius);
+
+
 }
 
 .accordion--expanded .accordion__content {
@@ -36,7 +41,7 @@
 }
 
 .accordion--expanded .accordion__toggle {
-	border-bottom: 2px solid var(--color-accent-2);
+	border-bottom: 2px solid var(--color-accent-1);
 }
 
 .accordion--expanded .accordion__toggle::before {
