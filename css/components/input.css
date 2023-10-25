@@ -5,7 +5,7 @@
 }
 
 .input-input {
-	border: 2px solid var(--color-accent-2);
+	border: 2px solid var(--color-accent-4);
 	border-radius: var(--border-radius);
 	width: 12rem;
 	padding: var(--spacing-small);
@@ -13,7 +13,7 @@
 
 .input-input::placeholder {
 	font-size: var(--font-size-small);
-	color: var(--color-accent-2);
+	color: var(--color-secondary);
 }
 
 .input-input:focus {
@@ -29,7 +29,7 @@ input[type="text"]{
 }
 
 .input--active .input-input::placeholder {
-	color: var(--color-accent-1);
+	color: var(--color-secondary);
 }
 
 .input-button {
