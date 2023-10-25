@@ -46,13 +46,14 @@ optionsList.forEach(option => {
 	})
 })
 
-//button. TODO: remove
+//button
 
+const buttonActive = document.querySelector('div')
 const buttonButton = document.querySelectorAll('.button__toggle');
 
 buttonButton.forEach(singleButton => {
 	singleButton.addEventListener('click', function() {
-		singleButton.innerText = 'Hello';
+		buttonActive.classList.toggle('button--active')
 	});
 });
 
