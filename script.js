@@ -58,16 +58,6 @@ buttonButton.forEach(singleButton => {
 });
 
 
-//input button TODO: remove
-
-const inputButtons = document.querySelectorAll('.input-button')
-
-inputButtons.forEach(inputButton => {
-	inputButton.addEventListener('click', () => {
-		alert("That's cool")
-	})
-})
-
 
 //accordion
 
@@ -82,3 +72,19 @@ accordions.forEach(accordion => {
 	
 	accordionToggle.addEventListener('click', displayAccordionContent);
 })
+
+
+//choicechip
+
+const choicechipActive = document.querySelector('div');
+const choicechipButton = document.querySelectorAll('.choicechip__button')
+
+choicechipButton.forEach(choicechip=>{
+	choicechip.addEventListener('click', () => {
+		choicechipActive.classList.toggle('choicechip--active')
+	});
+});
+
+
+//Alert
+
