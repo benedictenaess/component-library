@@ -1,11 +1,8 @@
-/* .choicechip {
+.choicechip__container{
 	display: flex;
-	justify-content: space-evenly;
 	flex-flow: row nowrap;
-	background-color: rgb(76, 121, 255);
-	width: 14rem;
-	padding: var(--spacing-small);
-} */
+	gap: var(--spacing-small);
+}
 
 .choicechip__button {
 	color: var(--color-accent-1);
