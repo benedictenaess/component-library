@@ -7,7 +7,6 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/variables.css">
-	<link rel="stylesheet" href="css/font.css">
 	<link rel="stylesheet" href="css/components/accordion.css">
 	<link rel="stylesheet" href="css/components/button.css">
 	<link rel="stylesheet" href="css/components/loader.css">
@@ -522,7 +521,7 @@
 				</div>
 				<div class="component-state__variant">
 					<div class="alert alert-first">
-						This is a warning
+						Warning!
 					</div>
 				</div>
 			</div>
@@ -533,15 +532,17 @@
 				</div>
 				<div class="component-state__variant">
 					<div class="alert alert-second">
-						Stop it!
+						Error!
 					</div>
 				</div>
 			</div>
 
 			<div class="alert-test">
-				<button class="alert-test__button">First alert test</button>
-				<button class="alert-test__button">Second alert test</button>
+				<button class="component-triggers__button button-warning">First alert test</button>
+				<button class="component-triggers__button button-error">Second alert test</button>
 			</div>
+
+			<div class="toast-container"></div>
 		</div>
 
 		<div class="component" data-component-name="loader">
