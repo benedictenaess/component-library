@@ -32,8 +32,8 @@ overviewButtons.forEach(overviewButton => {
 
 const selected = document.querySelector('.selected');
 const optionsContainer = document.querySelector('.options-container');
-
 const optionsList = document.querySelectorAll('.option');
+
 
 selected.addEventListener('click', () => {
 	optionsContainer.classList.toggle('active');
@@ -46,15 +46,20 @@ optionsList.forEach(option => {
 	})
 })
 
+
+
 //button
 
-const buttonActive = document.querySelector('div')
-const buttonButton = document.querySelectorAll('.button__toggle');
+const buttonButton = document.querySelectorAll('.button');
 
-buttonButton.forEach(singleButton => {
-	singleButton.addEventListener('click', function() {
-		buttonActive.classList.toggle('button--active')
-	});
+buttonButton.forEach(button => {
+	const buttonToggle = button.querySelector('.button__toggle');
+
+	const displayActiveButton = (event) =>{
+		button.classList.toggle('button--active');
+	}
+
+	button.addEventListener('click', displayActiveButton);
 });
 
 
@@ -76,13 +81,16 @@ accordions.forEach(accordion => {
 
 //choicechip
 
-const choicechipActive = document.querySelector('div');
-const choicechipButton = document.querySelectorAll('.choicechip__button')
+const choicechipButton = document.querySelectorAll('.choicechip')
 
-choicechipButton.forEach(choicechip=>{
-	choicechip.addEventListener('click', () => {
-		choicechipActive.classList.toggle('choicechip--active')
-	});
+choicechipButton.forEach(choicechip => {
+	const choicechipToggle = choicechip.querySelector('.choicechip__button');
+
+	const displayActiveChoicehip = (event) => {
+		choicechip.classList.toggle('choicechip--active');
+	}
+
+	choicechip.addEventListener('click', displayActiveChoicehip);
 });
 
 
