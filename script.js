@@ -94,5 +94,35 @@ choicechipButton.forEach(choicechip => {
 });
 
 
-//Alert
+//Toast
 
+
+let warningButton= document.querySelector('.button-warning')
+let errorButton = document.querySelector('.button-error')
+const toastContainer = document.querySelector('.toast-container')
+
+warningButton.addEventListener('click', () =>{
+	let toast = document.createElement('div');
+	toast.classList.add('alert');
+	toast.classList.add('toast-animation');
+	toast.innerText = 'Warning';
+	toastContainer.appendChild(toast);
+
+	setTimeout(() => {
+		toast.remove();
+	  }, 3005);
+});
+
+errorButton.addEventListener('click', () =>{
+	let toast = document.createElement('div');
+	toast.classList.add('alert');
+	toast.classList.add('alert-second');
+	toast.classList.add('toast-animation');
+	toast.innerText = 'Error';
+	toastContainer.appendChild(toast);
+
+
+	setTimeout(() => {
+		toast.remove();
+	  }, 3000);
+});
