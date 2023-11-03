@@ -1,13 +1,13 @@
 .alert {
 	display: flex;
 	justify-content: center;
-	width: 14rem;
+	width: 12.7rem;
 	font-size: var(--font-size-base);
 	font-weight: 500;
 	color: var(--color-accent-3);
 	background: var(--color-accent-2);
 	border-radius: var(--border-radius);
-	padding: var(--spacing-medium);
+	padding: var(--spacing-small);
 }
 
 .alert-second {
@@ -17,7 +17,7 @@
 .component-triggers__button {
 	color: var(--color-secondary);
 	font-size: var(--font-size-small);
-	width: 6.85rem;
+	width: 6.2rem;
 	border: 2px solid var(--color-secondary);
 	border-radius: var(--border-radius);
 	padding: var(--spacing-small);
