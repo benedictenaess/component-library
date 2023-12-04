@@ -1,7 +1,8 @@
+# Component Library
 
 Welcome to the Component Library, a project created as part of a school assignment. This library provides a collection of reusable UI components with associated styles and interactions. Feel free to explore these components.
 
-Components:
+## Components:
 
 Button
 The button component provides a customizable button with different states (Normal, Hover, Active).
